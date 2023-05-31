@@ -3,38 +3,13 @@
     padding: 0;
     margin: 0;
 }
-
-/*
-.combobox {
-    position: relative;
-    display: inline-block;
-}
-.combobox select {
-    appearance: none;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 5px 30px 5px 10px;
-    font-size: 14px;
-    border-radius: 4px;
-}  
-.combobox::after {
-    content: '\25BC';
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-*/
 .combobox {
   position: relative;
   display: inline-block;
 }
-
 .combobox:hover {
     box-shadow: 0 0 5px 2px #00FBCB;
 }
-
 .combobox select {
   appearance: none;
   background-color: #17242C;
@@ -45,7 +20,6 @@
   color: white;
   width: 200px;
 }
-
 .combobox::after {
   content: '\25BC';
   position: absolute;
@@ -56,8 +30,6 @@
   color: white;
   font-size: 14px;
 }
-  
-
 #bodyEnv{
     padding: 0;
     margin: 0;
@@ -86,8 +58,7 @@
     width: 80px;
     align-items: center;
 }
-#file-button{
-    
+#file-button{  
     appearance: none;
     background-color: #17242C;
     border: 2px solid #00FBCB;
@@ -100,26 +71,35 @@
 #file-button:hover{
     box-shadow: 0 0 5px 2px #00FBCB;
 }
+#mainEnv{
+    height: 100vh;
+}
+#mainEnv aside{
+    height: 100%;
+}
+#asides{
+    height: 100%;
+    display: flex;
+}
 #divSplash{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ajusta la altura del contenedor al 100% de la altura de la ventana */  
+    height: 100vh; 
 }
 #divImage{
     max-width: 100%;
     height: auto;
-    opacity: 0; /* Inicialmente, la imagen estará invisible */
-    animation: fadeIn 2s ease-in-out forwards; /* Nombre de la animación, duración y temporización */
-}
-  
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards; 
+} 
 @keyframes fadeIn {
     0%{
-      opacity: 0; /* Al comienzo de la animación, la imagen está invisible */
-      transform: translateY(20px); /* Opcional: deslizar hacia arriba */
+      opacity: 0;
+      transform: translateY(20px);
     }
     100%{
-      opacity: 1; /* Al final de la animación, la imagen es completamente visible */
-      transform: translateY(0); /* Opcional: regresar a la posición inicial */
+      opacity: 1;
+      transform: translateY(0);
     }
   }

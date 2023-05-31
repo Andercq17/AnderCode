@@ -8,21 +8,31 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body id="bodyEnv">
-    <header id="headerEnv">
-        <div id="headerDiv">
-            <input type="file" id="file-input" style="display: none;" name="adjunto" accept=".pdf,.jpg,.png" multiple>
-            <button id="file-button">File</button>
-            <div class="combobox">
-                <select>
-                  <option value="" selected>Choose Language</option>
-                  <option value="opcionJava">Java</option>
-                </select>
+    <main id="mainEnv">    
+        <header id="headerEnv">
+            <div id="headerDiv">
+                <input type="file" id="file-input" style="display: none;" name="adjunto" accept=".pdf,.jpg,.png" multiple>
+                <button id="file-button">File</button>
+                <div class="combobox">
+                    <select>
+                    <option value="" selected>Choose Language</option>
+                    <option value="opcionJava">Java</option>
+                    </select>
+                </div>
             </div>
+            <div id="headerImg">
+                <img src="../images/Logo.png" alt="">
+            </div>
+        </header>
+        <div id="asides">
+            <aside id="asideLeft">
+                <h1>hola</h1>
+            </aside>
+            <aside id="asideRight">
+                <h1>perro</h1>
+            </aside>
         </div>
-        <div id="headerImg">
-            <img src="../images/Logo.png" alt="">
-        </div>
-    </header>
+    </main>
     <script src="../js/botonFile.js"></script>
 </body>
 </html>
