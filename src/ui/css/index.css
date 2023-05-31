@@ -1,0 +1,125 @@
+#bodySplash{
+    background-color: #17242C;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+.combobox {
+    position: relative;
+    display: inline-block;
+}
+.combobox select {
+    appearance: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px 30px 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}  
+.combobox::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+*/
+.combobox {
+  position: relative;
+  display: inline-block;
+}
+
+.combobox:hover {
+    box-shadow: 0 0 5px 2px #00FBCB;
+}
+
+.combobox select {
+  appearance: none;
+  background-color: #17242C;
+  border: 2px solid #00FBCB;
+  padding: 8px 35px 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  color: white;
+  width: 200px;
+}
+
+.combobox::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: white;
+  font-size: 14px;
+}
+  
+
+#bodyEnv{
+    padding: 0;
+    margin: 0;
+}
+#headerImg{
+    padding-right: 20px;
+}
+#headerImg img{
+    height: 100%;
+}
+#headerDiv{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+#headerEnv{
+    display: flex;
+    border: #00FBCB solid;
+    height: 60px;
+    background-color: #17242C;    
+    justify-content: space-between;
+}
+#headerEnv button{
+    height: 70%;
+    width: 80px;
+    align-items: center;
+}
+#file-button{
+    
+    appearance: none;
+    background-color: #17242C;
+    border: 2px solid #00FBCB;
+    padding: 8px 35px 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    color: white;
+    width: 200px;
+}
+#file-button:hover{
+    box-shadow: 0 0 5px 2px #00FBCB;
+}
+#divSplash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura del contenedor al 100% de la altura de la ventana */  
+}
+#divImage{
+    max-width: 100%;
+    height: auto;
+    opacity: 0; /* Inicialmente, la imagen estará invisible */
+    animation: fadeIn 2s ease-in-out forwards; /* Nombre de la animación, duración y temporización */
+}
+  
+@keyframes fadeIn {
+    0%{
+      opacity: 0; /* Al comienzo de la animación, la imagen está invisible */
+      transform: translateY(20px); /* Opcional: deslizar hacia arriba */
+    }
+    100%{
+      opacity: 1; /* Al final de la animación, la imagen es completamente visible */
+      transform: translateY(0); /* Opcional: regresar a la posición inicial */
+    }
+  }
