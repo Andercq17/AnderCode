@@ -49,7 +49,7 @@
 #headerEnv{
     display: flex;
     border: #00FBCB solid;
-    height: 60px;
+    height: 8vh;
     background-color: #17242C;    
     justify-content: space-between;
 }
@@ -76,10 +76,24 @@
 }
 #mainEnv aside{
     height: 100%;
+    border: 2px solid #00FBCB;
+    border-top: 0;
+    background-color: #17242C;
+    color: white;
 }
 #asides{
-    height: 100%;
+    height: 91vh;
     display: flex;
+}
+#asideLeft{
+    width: 31vw;
+    padding-left: 30px;
+       
+}
+#asideRight{
+    width: 80vw;
+    margin-left: 20px;
+    padding-left: 50px;
 }
 #divSplash{
     display: flex;
